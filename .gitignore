@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Build / output
+dist/
+build/
+coverage/
+dist-ssr/
+.next/
+.out/
+.public/
+
+# Environment files
+.env
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.local
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# JetBrains
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Ignore npm/yarn lockfiles if you intentionally don't want them tracked (optional)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

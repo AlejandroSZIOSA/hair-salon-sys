@@ -4,9 +4,13 @@ import reactLogo from "@/assets/react.svg";
 import viteLogo from "@/assets/vite.svg"; */
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Navigate } from "react-router-dom";
-import UserLayout from "@/layouts/User";
-import HomePage from "./pages/Home/Home";
-import BookingPage from "./pages/Booking/Booking";
+import { UserLayout, AdminLayout } from "@/layouts/index";
+import { HomePage, BookingPage } from "@/pages/index.ts";
+import {
+  AdminDashboardPage,
+  AdminAppointmentsPage,
+  AdminSettingsPage,
+} from "@/pages/index.ts";
 import "./App.css";
 
 function App() {
@@ -30,24 +34,24 @@ function App() {
       ],
     },
 
-    /*   {
-      path: "/admin",
-      element: <UserLayout />,
+    {
+      path: "admin",
+      element: <AdminLayout />,
       children: [
         {
-          index: true,
-          element: <Navigate to="/home" />,
+          path: "dashboard",
+          element: <AdminDashboardPage />,
         },
         {
-          path: "home",
-          element: <HomePage />,
+          path: "appointments",
+          element: <AdminAppointmentsPage />,
         },
         {
-          path: "booking",
-          element: <BookingPage />,
+          path: "settings",
+          element: <AdminSettingsPage />,
         },
       ],
-    }, */
+    },
   ]);
 
   return <RouterProvider router={router} />;

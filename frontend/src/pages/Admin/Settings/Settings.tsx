@@ -1,7 +1,7 @@
 import React from "react";
 
-const SettingsPage: React.FC = () => {
+const AdminSettingsPage: React.FC = () => {
   return <div>Admin Settings</div>;
 };
 
-export default SettingsPage;
+export default AdminSettingsPage;

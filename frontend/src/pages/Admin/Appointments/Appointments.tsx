@@ -1,7 +1,7 @@
 import React from "react";
 
-const AppointmentsPage: React.FC = () => {
+const AdminAppointmentsPage: React.FC = () => {
   return <div>Admin Appointments</div>;
 };
 
-export default AppointmentsPage;
+export default AdminAppointmentsPage;

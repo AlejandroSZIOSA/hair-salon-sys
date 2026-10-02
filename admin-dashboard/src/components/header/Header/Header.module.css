@@ -1,0 +1,9 @@
+.headerInnerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.headerInnerContainer div h2 {
+  text-align: center;
+}
